@@ -13,20 +13,20 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "a210334e-d92e-4789-acc7-e42bb898dac4",
       "database_name": "youtube_ai_video_gen"
     }
   ],
   "kv_namespaces": [
     {
       "binding": "CACHE",
-      "id": "00000000000000000000000000000000"
+      "id": "fa800f4c1d73462cb194f9b6742e5d4b"
     }
   ],
   "r2_buckets": [
     {
       "binding": "MEDIA_BUCKET",
-      "bucket_name": "placeholder-bucket"
+      "bucket_name": "media-bucket"
     }
   ],
   "vars": {
