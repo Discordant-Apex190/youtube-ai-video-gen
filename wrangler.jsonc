@@ -11,6 +11,32 @@
     "binding": "ASSETS",
     "directory": ".open-next/assets"
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_name": "youtube_ai_video_gen"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "CACHE",
+      "id": "00000000000000000000000000000000"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "placeholder-bucket"
+    }
+  ],
+  "vars": {
+    "CF_ACCESS_AUD": "",
+    "CF_ACCESS_TEAM_DOMAIN": "",
+    "SESSION_SECRET": "",
+    "DEV_AUTH_BYPASS_TOKEN": "",
+    "DEV_AUTH_BYPASS_SESSION": "0"
+  },
   "observability": {
     "enabled": true
   },

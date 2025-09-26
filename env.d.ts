@@ -4,6 +4,17 @@
 declare namespace Cloudflare {
 	interface Env {
 		ASSETS: Fetcher;
+        DB: D1Database;
+        CACHE: KVNamespace;
+        MEDIA_BUCKET: R2Bucket;
+        CF_ACCESS_AUD: string;
+        CF_ACCESS_TEAM_DOMAIN: string;
+        CF_ACCESS_CERTS_URL?: string;
+        CF_ACCESS_LOGIN_URL?: string;
+        CF_ACCESS_JWT_ALG?: string;
+        SESSION_SECRET: string;
+        DEV_AUTH_BYPASS_TOKEN?: string;
+        DEV_AUTH_BYPASS_SESSION?: string;
 	}
 }
 interface CloudflareEnv extends Cloudflare.Env {}
