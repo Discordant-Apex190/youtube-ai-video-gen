@@ -15,6 +15,10 @@ declare namespace Cloudflare {
         SESSION_SECRET: string;
         DEV_AUTH_BYPASS_TOKEN?: string;
         DEV_AUTH_BYPASS_SESSION?: string;
+        GOOGLE_GEMINI_API_KEY: string;
+        GOOGLE_TTS_API_KEY: string;
+        DEEPAI_API_KEY: string;
+        GEMINI_MODEL?: string;
 	}
 }
 interface CloudflareEnv extends Cloudflare.Env {}
@@ -5363,7 +5367,7 @@ type AIGatewayHeaders = {
     [key: string]: string | number | boolean | object;
 };
 type AIGatewayUniversalRequest = {
-    provider: AIGatewayProviders | string; // eslint-disable-line
+    provider: AIGatewayProviders | string;
     endpoint: string;
     headers: Partial<AIGatewayHeaders>;
     query: unknown;
@@ -5379,7 +5383,7 @@ declare abstract class AiGateway {
         gateway?: GatewayOptions;
         extraHeaders?: object;
     }): Promise<Response>;
-    getUrl(provider?: AIGatewayProviders | string): Promise<string>; // eslint-disable-line
+    getUrl(provider?: AIGatewayProviders | string): Promise<string>;
 }
 interface AutoRAGInternalError extends Error {
 }

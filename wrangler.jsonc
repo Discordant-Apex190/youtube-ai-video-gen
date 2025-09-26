@@ -2,7 +2,6 @@
  * For more details on how to configure Wrangler, refer to:
  * https://developers.cloudflare.com/workers/wrangler/configuration/
  */ {
-  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "youtube-ai-video-gen",
   "main": ".open-next/worker.js",
   "compatibility_date": "2025-04-01",
@@ -35,7 +34,11 @@
     "CF_ACCESS_TEAM_DOMAIN": "",
     "SESSION_SECRET": "",
     "DEV_AUTH_BYPASS_TOKEN": "",
-    "DEV_AUTH_BYPASS_SESSION": "0"
+    "DEV_AUTH_BYPASS_SESSION": "0",
+    "GOOGLE_GEMINI_API_KEY": "",
+    "GOOGLE_TTS_API_KEY": "",
+    "DEEPAI_API_KEY": "",
+    "GEMINI_MODEL": "gemini-2.0-flash-lite-preview-02-05"
   },
   "observability": {
     "enabled": true
